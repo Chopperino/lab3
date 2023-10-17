@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flextable</title>
+    <style>
+      body {
+        margin: 0 auto;
+        height: 100vh;
+      }
+      #body {
+        border: 2px solid black;
+        width: 100%;
+        height: 100%;
+      }
+      #header {
+        height: 10%;
+        background-color: blue;
+        border-top: 0;
+      }
+      #main {
+        height: 80%;
+        text-align: center;
+      }
+      #footer {
+        height: 10%;
+        background-color: blue;
+        text-align: center;
+        border-top: 0;
+      }
+      #side-bar {
+        width: 10%;
+        background-color: rgb(255, 208, 0);
+      }
+      table {
+        margin: 0;
+        height: 100%;
+        border-collapse: collapse;
+        border-spacing: 0px;
+      }
+      td,
+      th {
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0;
+        border: 1px solid black;
+      }
+      #main-table {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="body">
+      <tr>
+        <th id="side-bar">2</th>
+        <th>
+          <table id="main-table">
+            <tr>
+              <th id="header">1</th>
+            </tr>
+            <tr>
+              <td id="main">4</td>
+            </tr>
+            <tr>
+              <td id="footer">3</td>
+            </tr>
+          </table>
+        </th>
+      </tr>
+    </table>
+  </body>
+</html>

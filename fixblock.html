@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fixblock</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      div {
+        border: 1px solid black;
+        width: 900px;
+        margin: 0;
+        font-size: 20px;
+        box-sizing: border-box;
+        border-collapse: collapse;
+      }
+      #body {
+        box-sizing: content-box;
+        width: 1050px;
+      }
+      #header {
+        background-color: blue;
+        height: 150px;
+      }
+      #sidebar {
+        background-color: rgb(255, 196, 0);
+        float: left;
+        width: 200px;
+        height: 900px;
+      }
+      #main {
+        height: 600px;
+      }
+      #footer {
+        background-color: blue;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="body">
+      <div id="sidebar">2</div>
+      <div id="header">1</div>
+      <div id="main">4</div>
+      <div id="footer">3</div>
+    </div>
+  </body>
+</html>
