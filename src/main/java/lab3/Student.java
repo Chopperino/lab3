@@ -29,11 +29,6 @@ public class Student {
     this.year = year;
   }
 
-  /**
-   * Перевизначення стандартного методу equals.
-   * @param o об'єкт для порівняння
-   * @return результат порівняння об'єктів
-   */
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -42,19 +37,11 @@ public class Student {
     return age == student.age && Double.compare(student.grade, grade) == 0 && year == student.year && Objects.equals(name, student.name) && Objects.equals(major, student.major);
   }
 
-  /**
-   * Перевизначення стандартного методу hashCode.
-   * @return хешкод на основі полів Student
-   */
   @Override
   public int hashCode() {
     return Objects.hash(name, age, grade, major, year);
   }
 
-  /**
-   * Перевизначення стандартного методу toString.
-   * @return рядок з інформацією про об'єкт класу на основі полів
-   */
   @Override
   public String toString() {
     return "Student{" +
